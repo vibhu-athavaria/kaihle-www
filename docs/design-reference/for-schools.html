@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Schools — Kaihle</title>
+<meta name="description" content="Kaihle gives teachers a real-time diagnostic view of every student's knowledge gaps — and generates personalised learning to fix them.">
+<link rel="stylesheet" href="styles.css">
+<style>
+.page-hero { background: linear-gradient(135deg, var(--indigo) 0%, #0f3d25 100%); padding: 80px 0; position: relative; overflow: hidden; }
+.page-hero::before { content:''; position:absolute; inset:0; background: radial-gradient(circle at 80% 50%, rgba(249,115,22,0.15) 0%, transparent 60%); }
+.page-hero-inner { position:relative; z-index:1; max-width:640px; }
+.page-hero h1 { font-family:'Fraunces',serif; font-size:52px; font-weight:700; color:white; line-height:1.1; letter-spacing:-1.5px; margin-bottom:20px; }
+.page-hero p { font-size:18px; color:rgba(255,255,255,0.8); line-height:1.65; margin-bottom:32px; }
+.problem-solution { display:grid; grid-template-columns:1fr 1fr; gap:2px; background:var(--border); border-radius:20px; overflow:hidden; }
+.ps-col { background:white; padding:40px 36px; }
+.ps-icon { font-size:28px; margin-bottom:16px; }
+.ps-title { font-family:'Fraunces',serif; font-size:22px; font-weight:700; color:var(--ink); margin-bottom:14px; }
+.ps-body { font-size:15px; line-height:1.75; color:var(--body); }
+.roles-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+.role-card { background:white; border-radius:18px; padding:28px 22px; border:1.5px solid var(--border); }
+.role-icon { font-size:28px; margin-bottom:12px; }
+.role-title { font-size:15px; font-weight:800; color:var(--ink); margin-bottom:8px; }
+.role-desc { font-size:13px; line-height:1.65; color:var(--body); }
+.pilot-callout { background: linear-gradient(135deg,#1a2016 0%,#0f3d25 100%); border-radius:24px; padding:52px 56px; position:relative; overflow:hidden; }
+.pilot-callout::before { content:''; position:absolute; inset:0; background: radial-gradient(circle at 10% 50%, rgba(79,70,229,0.3) 0%, transparent 60%); }
+.pilot-inner { position:relative; z-index:1; display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; }
+.pilot-badge { display:inline-flex; align-items:center; gap:8px; background:rgba(79,70,229,0.4); border:1px solid rgba(255,255,255,0.2); color:white; padding:6px 14px; border-radius:100px; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase; margin-bottom:20px; }
+.pilot-h2 { font-family:'Fraunces',serif; font-size:36px; font-weight:700; color:white; letter-spacing:-1px; margin-bottom:16px; }
+.pilot-body { font-size:15px; color:rgba(255,255,255,0.75); line-height:1.7; margin-bottom:28px; }
+.pilot-benefits { display:flex; flex-direction:column; gap:14px; }
+.pilot-benefit { display:flex; align-items:flex-start; gap:12px; font-size:14px; color:rgba(255,255,255,0.85); font-weight:500; }
+.check { font-size:18px; }
+.mini-steps { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; position:relative; }
+.mini-steps::before { content:''; position:absolute; top:20px; left:calc(16.67% + 12px); right:calc(16.67% + 12px); height:2px; background:var(--indigo-mid); }
+.mini-step { text-align:center; }
+.mini-step-dot { width:40px; height:40px; border-radius:50%; background:var(--indigo); color:white; font-size:14px; font-weight:800; display:flex; align-items:center; justify-content:center; margin:0 auto 16px; position:relative; z-index:1; }
+.mini-step-title { font-size:14px; font-weight:800; color:var(--ink); margin-bottom:6px; }
+.mini-step-desc { font-size:13px; color:var(--body); line-height:1.6; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="nav-logo"><div class="nav-logo-mark">K</div>kaihle</a>
+  <ul class="nav-links">
+    <li><a href="for-schools.html" class="active">For Schools</a></li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+    <li><a href="why-kaihle.html">Why Kaihle</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="demo.html" class="nav-cta">Request a Demo</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner">
+      <div class="pill pill-indigo mb-24" style="border-color:rgba(255,255,255,0.3);background:rgba(255,255,255,0.12);color:white;">Cambridge & IB Schools</div>
+      <h1>You know some students are falling behind. You just don't know exactly who, or why — and your teachers are spending so much time on admin that there's no space to find out.</h1>
+      <p>Kaihle gives every teacher a real-time diagnostic view of their class — and every student a personalised path forward. No guesswork. No extra workload.</p>
+      <a href="demo.html" class="btn btn-ghost btn-lg">Request a Demo</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-tag mb-32">The Problem & The Solution</div>
+    <div class="problem-solution">
+      <div class="ps-col">
+        <div class="ps-icon">⚠️</div>
+        <h3 class="ps-title">The problem every school shares</h3>
+        <p class="ps-body">Teachers are stretched. Class sizes make individual attention hard. End-of-term results tell you what happened — not what to do about it.<br><br>Most schools rely on homework grades and teacher intuition to identify struggling students. By the time a gap is spotted, it has compounded.</p>
+      </div>
+      <div class="ps-col" style="background:var(--indigo-light);">
+        <div class="ps-icon">✅</div>
+        <h3 class="ps-title" style="color:var(--indigo);">What Kaihle does differently</h3>
+        <p class="ps-body">Kaihle runs structured diagnostic assessments at the start of every unit. The platform analyses every response, maps gaps to specific curriculum subtopics, and generates a personalised study plan for each student — automatically.<br><br>Teachers don't get more work. They get better information.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:white;border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="text-center mb-48">
+      <div class="section-tag" style="justify-content:center;">Built for every role</div>
+      <h2 class="section-h2">One platform. Every person in your school.</h2>
+    </div>
+    <div class="roles-grid">
+      <div class="role-card"><div class="role-icon">🏫</div><div class="role-title">School Administrators</div><p class="role-desc">Full visibility across every class and every teacher. Understand school-wide performance trends. Approve student enrolments and manage staff in one place.</p></div>
+      <div class="role-card"><div class="role-icon">📖</div><div class="role-title">Teachers</div><p class="role-desc">See exactly where your class is struggling — before you teach the wrong thing twice. Assign assessments, review results, and let Kaihle generate the follow-up content.</p></div>
+      <div class="role-card"><div class="role-icon">🎓</div><div class="role-title">Students</div><p class="role-desc">Take a short diagnostic. Get a personalised plan. Learn through AI-generated explanations matched to your exact gaps and your learning style.</p></div>
+      <div class="role-card"><div class="role-icon">👨‍👩‍👧</div><div class="role-title">Parents</div><p class="role-desc">Receive a plain-language weekly summary of your child's progress — what improved, what's still being addressed, and what's coming next. No jargon. No login required.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="pilot-callout">
+      <div class="pilot-inner">
+        <div>
+          <div class="pilot-badge">✦ Founding Cohort · Now Open</div>
+          <h2 class="pilot-h2">Apply for the Founding Cohort</h2>
+          <p class="pilot-body">We are currently accepting applications from micro schools and small international schools in Southeast Asia for our founding pilot programme.</p>
+          <a href="demo.html" class="btn btn-ghost btn-lg">Apply for the Pilot</a>
+        </div>
+        <div class="pilot-benefits">
+          <div class="pilot-benefit"><span class="check">✓</span>Full platform access at no cost for 90 days</div>
+          <div class="pilot-benefit"><span class="check">✓</span>Direct support from our team throughout the pilot</div>
+          <div class="pilot-benefit"><span class="check">✓</span>Discounted pricing locked in for 12 months post-pilot</div>
+          <div class="pilot-benefit"><span class="check">✓</span>Input into the product roadmap as a founding school</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:white;border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="text-center mb-48">
+      <div class="section-tag" style="justify-content:center;">The platform, in plain terms</div>
+      <h2 class="section-h2">From enrolment to personalised learning — automatically.</h2>
+    </div>
+    <div class="mini-steps">
+      <div class="mini-step"><div class="mini-step-dot">1</div><div class="mini-step-title">Diagnostic In</div><p class="mini-step-desc">Student joins a class → Kaihle creates their diagnostic assessment automatically.</p></div>
+      <div class="mini-step"><div class="mini-step-dot">2</div><div class="mini-step-title">Gaps Mapped</div><p class="mini-step-desc">Every response is scored and mapped to a specific curriculum subtopic. Teacher sees results immediately.</p></div>
+      <div class="mini-step"><div class="mini-step-dot">3</div><div class="mini-step-title">Plans Generated</div><p class="mini-step-desc">Personalised study plan created per student — resources, quizzes, and AI content.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:32px;"><a href="how-it-works.html" style="color:var(--indigo);font-weight:700;text-decoration:none;font-size:14px;">See the full walkthrough →</a></div>
+  </div>
+</section>
+
+
+<section class="section" style="background:var(--primary-light);border-top:1px solid var(--primary-mid);border-bottom:1px solid var(--primary-mid);">
+  <div class="container">
+    <div class="mb-48">
+      <div class="section-tag">What Changes for Your School</div>
+      <h2 class="section-h2">A better platform for everyone<br>in your institution.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;">
+      <div style="background:white;border-radius:20px;padding:36px;border:1.5px solid var(--primary-mid);">
+        <div style="font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--primary);margin-bottom:16px;">For Students</div>
+        <h3 style="font-family:'Fraunces',serif;font-size:22px;font-weight:700;color:var(--ink);margin-bottom:16px;">Every lesson, built for them.</h3>
+        <p style="font-size:17px;color:var(--body);line-height:1.75;margin-bottom:16px;">Kaihle builds a Learning Profile for each student and uses it to personalise every study plan, every piece of AI-generated content, and every practice activity. Not the same lesson for everyone — the right lesson for each individual.</p>
+        <p style="font-size:17px;color:var(--body);line-height:1.75;">Gaps close faster. Students build real confidence. And the learning compounds — because each new lesson is built on an accurate picture of exactly where they are right now.</p>
+      </div>
+      <div style="background:white;border-radius:20px;padding:36px;border:1.5px solid var(--primary-mid);">
+        <div style="font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--primary);margin-bottom:16px;">For Teachers</div>
+        <h3 style="font-family:'Fraunces',serif;font-size:22px;font-weight:700;color:var(--ink);margin-bottom:16px;">Your AI teaching partner.</h3>
+        <p style="font-size:17px;color:var(--body);line-height:1.75;margin-bottom:16px;">The Teacher AI Lesson Planner generates complete, curriculum-aligned lesson plans in minutes — automatically tailored to each class's current gap map. Assessment creation, gap analysis, and study plan generation happen without any manual work.</p>
+        <p style="font-size:17px;color:var(--body);line-height:1.75;">Teachers get back the hours they were spending on planning and admin. They can use that time to mentor students, run richer classroom discussions, and build the kind of teacher–student relationships that actually change outcomes.</p>
+      </div>
+      <div style="background:white;border-radius:20px;padding:36px;border:1.5px solid var(--primary-mid);">
+        <div style="font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--primary);margin-bottom:16px;">For School Leaders</div>
+        <h3 style="font-family:'Fraunces',serif;font-size:22px;font-weight:700;color:var(--ink);margin-bottom:16px;">Clarity across your whole school.</h3>
+        <p style="font-size:17px;color:var(--body);line-height:1.75;">The school-wide analytics dashboard gives principals and heads of school a live view of learning outcomes across every class and subject. See where the school is performing well and where specific intervention is needed — based on data, not assumptions.</p>
+      </div>
+      <div style="background:white;border-radius:20px;padding:36px;border:1.5px solid var(--primary-mid);">
+        <div style="font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);margin-bottom:16px;">For the School as a Whole</div>
+        <h3 style="font-family:'Fraunces',serif;font-size:22px;font-weight:700;color:var(--ink);margin-bottom:16px;">Space for the education you aspire to offer.</h3>
+        <p style="font-size:17px;color:var(--body);line-height:1.75;">When core academic learning becomes more efficient, schools gain something precious — bandwidth. More room for extra-curricular activities, deeper projects, creative exploration, and the enriched experience every school wants to offer but rarely has capacity for.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container">
+    <div class="cta-banner">
+      <div class="cta-banner-inner">
+        <h2>Ready to see it with your school's curriculum?</h2>
+        <p>A demo takes 30 minutes. We'll show you the diagnostic flow, the teacher dashboard, and the student experience — using Cambridge content your students would actually see.</p>
+        <div class="cta-banner-actions"><a href="demo.html" class="btn btn-ghost btn-lg">Request a Demo</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div><div class="footer-brand-name"><div class="footer-brand-mark">K</div>kaihle</div><p class="footer-tagline">AI-powered diagnostic learning for Cambridge and IB schools worldwide. </p><div class="footer-contact"><a href="/cdn-cgi/l/email-protection#28404d4444476843494140444d064b4745"><span class="__cf_email__" data-cfemail="234b464f4f4c6348424a4b4f460d404c4e">[email&#160;protected]</span></a></div></div><div><div class="footer-col-title">Platform</div><ul class="footer-links"><li><a href="for-schools.html">For Schools</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="why-kaihle.html">Why Kaihle</a></li><li><a href="pricing.html">Pricing</a></li></ul></div><div><div class="footer-col-title">Company</div><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="demo.html">Request a Demo</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul></div></div><div class="footer-bottom"><div class="footer-copy">© 2026 Kaihle. 
