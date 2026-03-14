@@ -123,7 +123,7 @@ export default function HowItWorksPage() {
                         </div>
                         <span className="text-[11px] font-medium text-gray-400">Step 2 of 4</span>
                       </div>
-                      <p className="text-[14px] font-semibold text-ink mb-4">When you're learning something new, what usually works best for you?</p>
+                      <p className="text-[14px] font-semibold text-ink mb-4">When you&apos;re learning something new, what usually works best for you?</p>
                       <div className="space-y-2 mb-4">
                         <button className="w-full text-left px-4 py-3 rounded-[10px] bg-primary text-white border-2 border-primary">
                           <span className="text-[14px] font-medium">👀 See a worked example first, then try it myself</span>
