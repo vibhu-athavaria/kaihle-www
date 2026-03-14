@@ -85,15 +85,15 @@ export default function HomePage() {
           </div>
           <div className="p-8 md:px-10 border-b md:border-b-0 md:border-r border-gray-200">
             <div className="font-fraunces text-[28px] font-bold text-ink tracking-[-1px] leading-none">
-              Cambridge<br /><span className="text-primary">& IB</span>
+              Per-<br /><span className="text-primary">student</span>
             </div>
-            <div className="text-[13px] text-gray-500 font-medium mt-1">Aligned to curricula your school already uses</div>
+            <div className="text-[13px] text-gray-500 font-medium mt-1">Diagnostic reports for every student in your class</div>
           </div>
           <div className="p-8 md:px-10">
             <div className="font-fraunces text-[28px] font-bold text-ink tracking-[-1px] leading-none">
-              Cambridge<br /><span className="text-primary">Grades 6–12</span>
+              AI-<br /><span className="text-primary">generated</span>
             </div>
-            <div className="text-[13px] text-gray-500 font-medium mt-1">Curriculum fully mapped</div>
+            <div className="text-[13px] text-gray-500 font-medium mt-1">Personalised study plans built around each student&apos;s gaps</div>
           </div>
         </div>
       </div>
