@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import { SectionWrapper } from '@/components/ui/SectionWrapper'
 import { CTABanner } from '@/components/ui/CTABanner'
-import { ClipboardCheck, BarChart3, BookMarked, Sparkles, Mail } from 'lucide-react'
+import { ClipboardCheck, BarChart3, BookMarked, Sparkles, Mail, UserRound } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'How It Works — Kaihle',
@@ -18,15 +18,25 @@ export const metadata: Metadata = {
 const steps = [
   {
     num: '01',
-    Icon: ClipboardCheck,
-    title: 'Student takes a diagnostic assessment',
-    body: `When a student joins a class, Kaihle automatically creates a Tier 1 diagnostic — a short, curriculum-aligned assessment covering all major topics for their grade and subject. The student completes it once. The platform does the rest.
+    Icon: UserRound,
+    title: "Before anything else: tell Kaihle about yourself",
+    body: `When a student joins Kaihle for the first time, the very first thing they do isn't a test — it's a short onboarding conversation. Kaihle asks the student a few simple questions about how they like to learn: Do they prefer to see examples before explanations, or the other way around? Do they find it easier to work through problems step by step, or see the big picture first? How do they feel about the subject they're about to study?
 
-Teachers can also assign Tier 2 assessments at any point — before a new unit, mid-term, or after a period of absence.`,
-    badge: 'Takes ~15 minutes · Covers full grade curriculum',
+This isn't a quiz. There are no right or wrong answers. It's Kaihle getting to know the person behind the student — so that from the very first lesson, every piece of content, every study plan, and every AI-generated explanation is built around how this student actually learns. Not how the average student learns. Them.`,
+    badge: '🙋 Takes ~5 minutes · No right answers · Sets up everything that follows',
+    isOnboarding: true,
   },
   {
     num: '02',
+    Icon: ClipboardCheck,
+    title: 'Student takes their Initial Diagnostic Assessment',
+    body: `When a student joins a class, Kaihle automatically runs an Initial Diagnostic Assessment — a short, curriculum-aligned assessment covering all major topics for their grade and subject. The student completes it once. The platform does the rest.
+
+Teachers can also assign Progress Checks at any point — before a new unit, mid-term, or after a period of absence. These are shorter, focused assessments that update each student's gap map with fresh data as the year progresses.`,
+    badge: 'Takes ~15 minutes · Covers full grade curriculum',
+  },
+  {
+    num: '03',
     Icon: BarChart3,
     title: 'Kaihle maps the gaps',
     body: `Every response is scored and mapped to a specific curriculum subtopic. Kaihle calculates a mastery score per subtopic for every student — and compares it across the class.
@@ -35,7 +45,7 @@ The teacher sees a colour-coded heatmap: green for strong, amber for developing,
     badge: 'Updated in real-time · Cambridge & IB aligned',
   },
   {
-    num: '03',
+    num: '04',
     Icon: BookMarked,
     title: 'A personalised study plan is generated',
     body: `For every gap identified, Kaihle generates a study plan. This includes curated external resources matched to the student's learning profile, and an AI-generated practice quiz to reinforce the concept.
@@ -44,14 +54,14 @@ Resources are selected by semantic similarity to the curriculum subtopic — not
     badge: 'Curated resources + AI practice quiz per gap',
   },
   {
-    num: '04',
+    num: '05',
     Icon: Sparkles,
     title: 'AI-generated explainer content',
     body: `For deeper gaps, Kaihle generates personalised explainer content — structured around how this specific student learns. Teachers can see every student&apos;s content and progress inside the class dashboard.`,
     badge: 'Animations · Infographics · Practice questions',
   },
   {
-    num: '05',
+    num: '06',
     Icon: Mail,
     title: 'Parents stay informed',
     body: `Each week, parents receive a plain-language summary of their child&apos;s progress — improvements, gaps still being addressed, and what&apos;s coming next. No jargon. No login required.`,
@@ -98,8 +108,43 @@ export default function HowItWorksPage() {
                   </span>
                 </div>
               </div>
-              <div className={`bg-gradient-to-br from-primary-light to-accent-light rounded-[24px] h-[300px] flex items-center justify-center ${i % 2 === 1 ? 'lg:order-1' : ''}`}>
-                <step.Icon className="w-24 h-24 text-primary/30" />
+              <div className={`bg-gradient-to-br from-primary-light to-accent-light rounded-[24px] h-[300px] flex items-center justify-center ${i % 2 === 1 ? 'lg:order-1' : ''} ${step.isOnboarding ? '!h-auto !p-6' : ''}`}>
+                {step.isOnboarding ? (
+                  <div className="w-full max-w-[320px] bg-white rounded-[16px] shadow-lg overflow-hidden">
+                    <div className="bg-primary/5 px-4 py-3 border-b border-gray-100">
+                      <span className="text-[11px] font-semibold text-primary uppercase tracking-wide">Welcome to Kaihle</span>
+                      <span className="text-gray-300 mx-2">·</span>
+                      <span className="text-[11px] font-medium text-gray-500">Student Onboarding</span>
+                    </div>
+                    <div className="p-5">
+                      <div className="flex items-center gap-2 mb-4">
+                        <div className="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                          <div className="h-full w-[50%] bg-primary rounded-full"></div>
+                        </div>
+                        <span className="text-[11px] font-medium text-gray-400">Step 2 of 4</span>
+                      </div>
+                      <p className="text-[14px] font-semibold text-ink mb-4">When you&apos;re learning something new, what usually works best for you?</p>
+                      <div className="space-y-2 mb-4">
+                        <button className="w-full text-left px-4 py-3 rounded-[10px] bg-primary text-white border-2 border-primary">
+                          <span className="text-[14px] font-medium">👀 See a worked example first, then try it myself</span>
+                        </button>
+                        <button className="w-full text-left px-4 py-3 rounded-[10px] bg-white text-gray-600 border-2 border-gray-200 hover:border-gray-300">
+                          <span className="text-[14px] font-medium">📖 Read the explanation first, then examples</span>
+                        </button>
+                        <button className="w-full text-left px-4 py-3 rounded-[10px] bg-white text-gray-600 border-2 border-gray-200 hover:border-gray-300">
+                          <span className="text-[14px] font-medium">🧩 Jump straight in and figure it out as I go</span>
+                        </button>
+                      </div>
+                      <div className="flex gap-2 flex-wrap">
+                        <span className="px-3 py-1 rounded-full bg-accent text-white text-[11px] font-semibold">Visual learner</span>
+                        <span className="px-3 py-1 rounded-full bg-primary text-white text-[11px] font-semibold">Maths · Grade 8</span>
+                        <span className="px-3 py-1 rounded-full bg-gray-100 text-gray-600 text-[11px] font-semibold">Cambridge Checkpoint</span>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <step.Icon className="w-24 h-24 text-primary/30" />
+                )}
               </div>
             </div>
           ))}
