@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { Metadata } from 'next'
-import { ArrowRight, BookOpen } from 'lucide-react'
 import { SectionWrapper } from '@/components/ui/SectionWrapper'
 import { SectionTag } from '@/components/ui/SectionTag'
 import { Button } from '@/components/ui/Button'
@@ -215,44 +214,24 @@ export default function HomePage() {
       </SectionWrapper>
 
       {/* Founder Credibility */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-
-            {/* Section badge — match pill pattern used across page */}
-            <div className="inline-flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full mb-4">
-              <BookOpen className="w-4 h-4 text-blue-600" />
-              <span className="text-blue-600 font-semibold">Why Kaihle exists</span>
-            </div>
-
-            {/* Heading — match text-4xl md:text-5xl used in all peer sections */}
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Built by someone who ran a school<br className="hidden md:block" /> and lived this problem
-            </h2>
-
-            {/* Body — max-w-2xl to match paragraph width convention */}
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-              After years leading an international school, our founder couldn&apos;t get a
-              straight answer to one question: what does each student actually understand
-              right now — not what they submitted, not what they scored, but what they
-              genuinely know? Kaihle exists to answer that question, for every teacher,
-              every class, every day.
-            </p>
-
-            {/* CTA — match the hero button style pattern */}
-            <a
-              href="mailto:hello@kaihle.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-700 transition-colors"
-            >
-              Book a conversation
-              <ArrowRight className="w-5 h-5" />
-            </a>
-
-          </div>
+      <SectionWrapper className="bg-white">
+        <div className="text-center max-w-[680px] mx-auto">
+          <SectionTag>Why Kaihle exists</SectionTag>
+          <h2 className="font-fraunces text-[36px] md:text-[42px] font-bold text-ink tracking-[-1px] leading-[1.1] mt-4 mb-6">
+            Built by someone who ran a school<br className="hidden md:block" /> and lived this problem
+          </h2>
+          <p className="text-[18px] leading-[1.65] text-gray-600 mb-9">
+            After years leading an international school, our founder couldn&apos;t get a
+            straight answer to one question: what does each student actually understand
+            right now — not what they submitted, not what they scored, but what they
+            genuinely know? Kaihle exists to answer that question, for every teacher,
+            every class, every day.
+          </p>
+          <Button href="mailto:hello@kaihle.com" variant="primary" size="lg">
+            Book a conversation →
+          </Button>
         </div>
-      </section>
+      </SectionWrapper>
 
       {/* CTA Banner */}
       <SectionWrapper className="py-14">
