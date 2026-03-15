@@ -84,15 +84,15 @@ export default function HomePage() {
           </div>
           <div className="p-8 md:px-10 border-b md:border-b-0 md:border-r border-gray-200">
             <div className="font-fraunces text-[28px] font-bold text-ink tracking-[-1px] leading-none">
-              Cambridge<br /><span className="text-primary">& IB</span>
+              Per-<br /><span className="text-primary">student</span>
             </div>
-            <div className="text-[13px] text-gray-500 font-medium mt-1">Aligned to curricula your school already uses</div>
+            <div className="text-[13px] text-gray-500 font-medium mt-1">Diagnostic reports for every student in your class</div>
           </div>
           <div className="p-8 md:px-10">
-            <div className="font-fraunces text-[36px] font-bold text-ink tracking-[-1px] leading-none">
-              90 <span className="text-[20px]">days</span>
+            <div className="font-fraunces text-[28px] font-bold text-ink tracking-[-1px] leading-none">
+              AI-<br /><span className="text-primary">generated</span>
             </div>
-            <div className="text-[13px] text-gray-500 font-medium mt-1">From first demo to signed pilot agreement</div>
+            <div className="text-[13px] text-gray-500 font-medium mt-1">Personalised study plans built around each student&apos;s gaps</div>
           </div>
         </div>
       </div>
@@ -213,39 +213,23 @@ export default function HomePage() {
         </div>
       </SectionWrapper>
 
-      {/* Testimonial */}
-      <SectionWrapper>
-        <div className="bg-gradient-to-br from-primary-light to-accent-light rounded-[24px] p-14 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
-            <p className="font-fraunces text-[22px] md:text-[26px] font-semibold italic text-ink leading-[1.4] mb-5">
-              &quot;We finally know what each student actually knows — not just what they handed in.&quot;
-            </p>
-            <div className="text-[14px] font-bold text-primary">[Founder to complete — name]</div>
-            <span className="block text-[13px] font-medium text-gray-600 mt-0.5">[Founder to complete — Role, School Name, Location]</span>
-          </div>
-          <div className="flex flex-col gap-5">
-            <div className="flex items-start gap-4">
-              <div className="text-[24px]">🎯</div>
-              <div>
-                <div className="font-fraunces text-[28px] font-bold text-primary tracking-[-1px] leading-none">7,000+</div>
-                <div className="text-[13px] text-gray-600 font-medium">Curriculum-aligned questions</div>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="text-[24px]">⚡</div>
-              <div>
-                <div className="font-fraunces text-[28px] font-bold text-primary tracking-[-1px] leading-none">90 days</div>
-                <div className="text-[13px] text-gray-600 font-medium">To first paying pilot school</div>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="text-[24px]">🌏</div>
-              <div>
-                <div className="font-fraunces text-[28px] font-bold text-primary tracking-[-1px] leading-none">SEA</div>
-                <div className="text-[13px] text-gray-600 font-medium">Expanding across Southeast Asia and beyond</div>
-              </div>
-            </div>
-          </div>
+      {/* Founder Credibility */}
+      <SectionWrapper className="bg-white">
+        <div className="text-center max-w-[680px] mx-auto">
+          <SectionTag>Why Kaihle exists</SectionTag>
+          <h2 className="font-fraunces text-[36px] md:text-[42px] font-bold text-ink tracking-[-1px] leading-[1.1] mt-4 mb-6">
+            Built by someone who ran a school<br className="hidden md:block" /> and lived this problem
+          </h2>
+          <p className="text-[18px] leading-[1.65] text-gray-600 mb-9">
+            After years leading an international school, our founder couldn&apos;t get a
+            straight answer to one question: what does each student actually understand
+            right now — not what they submitted, not what they scored, but what they
+            genuinely know? Kaihle exists to answer that question, for every teacher,
+            every class, every day.
+          </p>
+          <Button href="mailto:hello@kaihle.com" variant="primary" size="lg">
+            Book a conversation →
+          </Button>
         </div>
       </SectionWrapper>
 

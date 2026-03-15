@@ -28,8 +28,7 @@ export function Footer() {
               AI-powered diagnostic learning for Cambridge and IB schools worldwide.
             </p>
             <div className="text-[14px] text-white/60 leading-loose">
-              <a href="mailto:hello@kaihle.com" className="text-primary-mid hover:text-white no-underline">hello@kaihle.com</a><br/>
-              Cambridge, United Kingdom
+              <a href="mailto:hello@kaihle.com" className="text-primary-mid hover:text-white no-underline">hello@kaihle.com</a>
             </div>
           </div>
 
