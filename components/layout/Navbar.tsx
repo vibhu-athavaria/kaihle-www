@@ -25,7 +25,8 @@ export function Navbar() {
 
   return (
     <header className={`sticky top-0 z-50 h-[72px] flex items-center px-6 md:px-14
-      bg-soft/92 backdrop-blur-xl border-b border-gray-200 transition-shadow duration-300
+      backdrop-blur-xl border-b border-gray-200 transition-shadow duration-300
+      ${open ? 'bg-soft' : 'bg-soft/92'}
       ${scrolled ? 'shadow-sm' : ''}`}>
       <div className="flex items-center justify-between w-full max-w-[1200px] mx-auto">
 
