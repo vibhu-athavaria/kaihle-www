@@ -24,35 +24,38 @@ export function Navbar() {
   }, [])
 
   return (
-    <header className={`sticky top-0 z-50 h-[72px] flex items-center px-6 md:px-14
-      bg-soft/92 backdrop-blur-xl border-b border-gray-200 transition-shadow duration-300
-      ${scrolled ? 'shadow-sm' : ''}`}>
-      <div className="flex items-center justify-between w-full max-w-[1200px] mx-auto">
+    <>
+      <header className={`sticky top-0 z-50 h-[72px] flex items-center px-6 md:px-14
+        backdrop-blur-xl border-b border-gray-200 transition-shadow duration-300
+        ${open ? 'bg-soft' : 'bg-soft/92'}
+        ${scrolled ? 'shadow-sm' : ''}`}>
+        <div className="flex items-center justify-between w-full max-w-[1200px] mx-auto">
 
-        <Link href="/" className="flex items-center gap-2 font-fraunces font-bold text-[26px] text-ink tracking-[-0.5px] no-underline">
-          <div className="w-9 h-9 bg-primary rounded-[10px] flex items-center justify-center text-white font-black font-nunito text-[17px]">K</div>
-          kaihle
-        </Link>
-
-        <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map(l => (
-            <Link key={l.href} href={l.href}
-              className={`text-[15px] font-semibold transition-colors duration-200
-                ${pathname === l.href ? 'text-primary' : 'text-gray-600 hover:text-primary'}`}>
-              {l.label}
-            </Link>
-          ))}
-          <Link href="/demo"
-            className="bg-primary hover:bg-primary-dark text-white rounded-full px-5 py-2.5 text-[14px] font-bold
-            shadow-[0_2px_10px_rgba(26,92,56,0.25)] transition-all duration-200">
-            Request a Demo
+          <Link href="/" className="flex items-center gap-2 font-fraunces font-bold text-[26px] text-ink tracking-[-0.5px] no-underline">
+            <div className="w-9 h-9 bg-primary rounded-[10px] flex items-center justify-center text-white font-black font-nunito text-[17px]">K</div>
+            kaihle
           </Link>
-        </nav>
 
-        <button className="md:hidden text-ink" onClick={() => setOpen(!open)}>
-          {open ? <X size={24} /> : <Menu size={24} />}
-        </button>
-      </div>
+          <nav className="hidden md:flex items-center gap-8">
+            {navLinks.map(l => (
+              <Link key={l.href} href={l.href}
+                className={`text-[15px] font-semibold transition-colors duration-200
+                  ${pathname === l.href ? 'text-primary' : 'text-gray-600 hover:text-primary'}`}>
+                {l.label}
+              </Link>
+            ))}
+            <Link href="/demo"
+              className="bg-primary hover:bg-primary-dark text-white rounded-full px-5 py-2.5 text-[14px] font-bold
+              shadow-[0_2px_10px_rgba(26,92,56,0.25)] transition-all duration-200">
+              Request a Demo
+            </Link>
+          </nav>
+
+          <button className="md:hidden text-ink" onClick={() => setOpen(!open)}>
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+      </header>
 
       {open && (
         <div className="md:hidden fixed inset-0 top-[72px] bg-soft z-40 flex flex-col p-8 gap-6">
@@ -68,6 +71,6 @@ export function Navbar() {
           </Link>
         </div>
       )}
-    </header>
+    </>
   )
 }
