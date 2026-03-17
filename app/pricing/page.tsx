@@ -30,6 +30,24 @@ export default function PricingPage() {
         </div>
       </section>
 
+      {/* ROI Framing */}
+      <SectionWrapper>
+        <div className="max-w-[800px] mx-auto text-center">
+          <h2 className="font-fraunces text-[32px] font-bold text-ink mb-6">What does $20 actually mean?</h2>
+          <div className="space-y-6 text-[17px] text-gray-600 leading-[1.75]">
+            <p>
+              A private tutor in most cities costs $40–80 per hour. A part-time learning support teacher costs $1,500–3,000 per month. Neither gives you a real-time view of every student in every class.
+            </p>
+            <p>
+              At $20 per student per month, Kaihle gives every student in your school a personalised diagnostic, a learning profile, and a tailored study plan — updated continuously throughout the year. For a school of 60 students, that&apos;s $1,200 a month for what would otherwise require multiple specialists, weeks of manual assessment, and a mountain of spreadsheets.
+            </p>
+            <p>
+              For most schools, Kaihle costs less than one part-time hire. And it works across every class, every subject, every day.
+            </p>
+          </div>
+        </div>
+      </SectionWrapper>
+
       {/* Pricing Cards */}
       <SectionWrapper>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[900px] mx-auto">
@@ -58,7 +76,7 @@ export default function PricingPage() {
                 <span className="text-primary">✓</span> Parent reports
               </li>
             </ul>
-            <Button href="/demo" variant="outline" className="w-full">Start Free Trial</Button>
+            <Button href="/demo" variant="outline" className="w-full">Apply for Pilot</Button>
           </div>
 
           {/* Pay As You Go */}
@@ -83,18 +101,35 @@ export default function PricingPage() {
                 <span className="text-white">✓</span> Regular feature updates
               </li>
             </ul>
-            <Button href="/demo" variant="ghost" className="w-full">Start Pilot</Button>
+            <Button href="/demo" variant="ghost" className="w-full">Apply for Pilot</Button>
           </div>
         </div>
 
         {/* Founding Partner Offer */}
         <div className="mt-12 bg-accent-light border border-accent-mid rounded-card p-8 text-center">
-          <div className="text-[13px] font-bold uppercase tracking-[1.5px] text-accent mb-2">Founding Partner Offer</div>
-          <h3 className="font-fraunces text-[24px] font-bold text-ink mb-2">Extended trial + locked rate</h3>
+          <div className="text-[13px] font-bold uppercase tracking-[1.5px] text-accent mb-2">Founding Partner Offer — 10 schools only</div>
+          <h3 className="font-fraunces text-[24px] font-bold text-ink mb-2">Opening Kaihle to a founding cohort</h3>
           <p className="text-gray-600 mb-4">
-            First 10 partner schools get 60-day free trial + $15/user/month locked for 12 months.
+            We&apos;re opening Kaihle to a founding cohort of ten schools. In exchange for early
+            access, you get our full attention: direct input into the product roadmap,
+            dedicated onboarding support, and pricing locked well below what schools will
+            pay at launch.
           </p>
-          <Button href="/demo" variant="primary">Apply for Founding Cohort</Button>
+          <ul className="text-left max-w-[500px] mx-auto mb-6 space-y-2 text-gray-600">
+            <li className="flex items-center gap-2">
+              <span className="text-accent">✓</span> 60-day free trial — full platform, no restrictions
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-accent">✓</span> $15/user/month locked for 12 months post-trial
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-accent">✓</span> Direct line to the founding team throughout
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-accent">✓</span> Your school&apos;s curriculum needs shape the product
+            </li>
+          </ul>
+          <Button href="/demo" variant="primary">Apply for Pilot</Button>
         </div>
       </SectionWrapper>
 
@@ -102,8 +137,8 @@ export default function PricingPage() {
       <SectionWrapper className="bg-soft">
         <div className="text-center">
           <h2 className="font-fraunces text-[32px] font-bold text-ink mb-4">Questions?</h2>
-          <p className="text-gray-600 mb-6">We’re happy to answer any questions about pricing.</p>
-          <Button href="/demo" variant="outline">Talk to Sales</Button>
+          <p className="text-gray-600 mb-6">We&apos;re happy to answer any questions about pricing.</p>
+          <Button href="/demo" variant="outline">Book a 30-min Demo →</Button>
         </div>
       </SectionWrapper>
     </>

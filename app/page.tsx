@@ -41,6 +41,11 @@ export default function HomePage() {
               </span>
             </h1>
             
+            <p className="text-2xl md:text-3xl font-fraunces font-medium leading-snug tracking-tight text-ink/80 mb-4">
+              The best educator you can hire can&apos;t personalise for 25 students.{" "}
+              <span className="text-accent">Kaihle can.</span>
+            </p>
+            
             <p className="text-[18px] leading-[1.65] text-gray-600 max-w-[460px] mb-9">
               Kaihle is an AI-powered diagnostic platform that maps exactly where each
               student is struggling — and generates personalised learning to fix it.
@@ -48,7 +53,7 @@ export default function HomePage() {
             </p>
             
             <div className="flex gap-3 mb-11 items-center flex-wrap">
-              <Button href="/demo" variant="primary" size="lg">Request a Demo</Button>
+              <Button href="/demo" variant="primary" size="lg">Apply for Pilot</Button>
               <Link href="/how-it-works" className="text-[15px] font-semibold text-gray-600 hover:text-primary">
                 See how it works →
               </Link>
@@ -81,6 +86,7 @@ export default function HomePage() {
               7,000<span className="text-primary">+</span>
             </div>
             <div className="text-[13px] text-gray-500 font-medium mt-1">Curriculum-aligned questions ready from day one</div>
+            <div className="text-[12px] text-gray-400 mt-1">Launching with Cambridge. IB and Common Core coming soon.</div>
           </div>
           <div className="p-8 md:px-10 border-b md:border-b-0 md:border-r border-gray-200">
             <div className="font-fraunces text-[28px] font-bold text-ink tracking-[-1px] leading-none">
@@ -165,7 +171,7 @@ export default function HomePage() {
             <div className="bg-white p-10">
               <div className="w-[52px] h-[52px] bg-primary rounded-[14px] font-black text-[20px] text-white flex items-center justify-center mb-4">03</div>
               <h3 className="text-[19px] font-extrabold text-ink mb-2.5">Fix</h3>
-              <p className="text-[14px] leading-[1.7] text-gray-600 mb-3.5">Kaihle generates a personalised study plan per student — curated resources, practice quizzes, and AI-produced content.</p>
+              <p className="text-[14px] leading-[1.7] text-gray-600 mb-3.5">Students get a personalised study plan built for how they learn. Teachers coach. Kaihle handles the rest.</p>
               <span className="bg-primary-light text-primary text-[11px] font-bold px-3 py-1 rounded-full inline-block">Fully automated</span>
             </div>
           </div>
@@ -221,11 +227,10 @@ export default function HomePage() {
             Built by someone who ran a school<br className="hidden md:block" /> and lived this problem
           </h2>
           <p className="text-[18px] leading-[1.65] text-gray-600 mb-9">
-            After years leading an international school, our founder couldn&apos;t get a
-            straight answer to one question: what does each student actually understand
-            right now — not what they submitted, not what they scored, but what they
-            genuinely know? Kaihle exists to answer that question, for every teacher,
-            every class, every day.
+            After years leading an international school, our founder couldn&apos;t get a straight
+            answer to one question: what does each student actually understand right now —
+            not what they submitted, not what they scored, but what they genuinely know?
+            Kaihle exists to answer that question, for every teacher, every class, every day.
           </p>
           <Button href="mailto:hello@kaihle.com" variant="primary" size="lg">
             Book a conversation →
@@ -238,7 +243,7 @@ export default function HomePage() {
         <CTABanner
           headline="Ready to run a pilot?"
           subheadline="We work with micro schools and small international schools. If you have 15–300 students and a Cambridge or IB curriculum, we want to talk."
-          primaryCTA={{ label: 'Request a Demo →', href: '/demo' }}
+          primaryCTA={{ label: 'Apply for Pilot →', href: '/demo' }}
           secondaryCTA={{ label: 'For Schools', href: '/for-schools' }}
         />
       </SectionWrapper>
