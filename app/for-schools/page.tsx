@@ -42,7 +42,7 @@ export default function ForSchoolsPage() {
               workload.
             </p>
             
-            <Button href="/demo" variant="ghost" size="lg">Request a Demo</Button>
+            <Button href="/demo" variant="ghost" size="lg">Apply for Pilot</Button>
           </div>
         </div>
       </section>
@@ -140,13 +140,13 @@ export default function ForSchoolsPage() {
                 ✦ Founding Cohort · Now Open
               </div>
               <h2 className="font-fraunces text-[32px] md:text-[36px] font-bold text-white tracking-[-1px] mb-4">
-                Apply for the Founding Cohort
+                Apply for the Pilot Programme
               </h2>
               <p className="text-[15px] text-white/75 leading-[1.7] mb-7">
                 We are currently accepting applications from micro schools and small
-                international schools in Southeast Asia for our founding pilot programme.
+                international schools worldwide for our founding pilot programme.
               </p>
-              <Button href="/demo" variant="ghost" size="lg">Apply for the Pilot</Button>
+              <Button href="/demo" variant="ghost" size="lg">Apply for Pilot</Button>
             </div>
             <div className="flex flex-col gap-3.5">
               <div className="flex items-start gap-3 text-[14px] text-white/85 font-medium">
@@ -263,7 +263,7 @@ export default function ForSchoolsPage() {
         <CTABanner
           headline="Ready to see it with your school's curriculum?"
           subheadline="A demo takes 30 minutes. We'll show you the diagnostic flow, the teacher dashboard, and the student experience — using Cambridge content your students would actually see."
-          primaryCTA={{ label: 'Request a Demo →', href: '/demo' }}
+          primaryCTA={{ label: 'Apply for Pilot →', href: '/demo' }}
         />
       </SectionWrapper>
     </>

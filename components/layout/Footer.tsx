@@ -9,7 +9,7 @@ const platform = [
 
 const company = [
   { label: 'About Us', href: '/about' },
-  { label: 'Request a Demo', href: '/demo' },
+  { label: 'Apply for Pilot', href: '/demo' },
   { label: 'Privacy Policy', href: '/privacy' },
 ]
 

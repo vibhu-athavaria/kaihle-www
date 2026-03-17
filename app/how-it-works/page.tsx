@@ -156,7 +156,7 @@ export default function HowItWorksPage() {
         <CTABanner
           headline="Ready to see it in action?"
           subheadline="A 30-minute demo will walk you through the entire flow — from diagnostic to student experience. We&apos;ll use Cambridge content your students would actually see."
-          primaryCTA={{ label: 'Request a Demo →', href: '/demo' }}
+          primaryCTA={{ label: 'Apply for Pilot →', href: '/demo' }}
         />
       </SectionWrapper>
     </>

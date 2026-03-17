@@ -47,7 +47,7 @@ export function Navbar() {
             <Link href="/demo"
               className="bg-primary hover:bg-primary-dark text-white rounded-full px-5 py-2.5 text-[14px] font-bold
               shadow-[0_2px_10px_rgba(26,92,56,0.25)] transition-all duration-200">
-              Request a Demo
+              Apply for Pilot
             </Link>
           </nav>
 
@@ -67,7 +67,7 @@ export function Navbar() {
           ))}
           <Link href="/demo" onClick={() => setOpen(false)}
             className="bg-primary text-white rounded-full px-6 py-3 text-[15px] font-bold text-center mt-4">
-            Request a Demo
+            Apply for Pilot
           </Link>
         </div>
       )}
