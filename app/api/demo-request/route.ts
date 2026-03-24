@@ -17,7 +17,7 @@ export async function POST(request: Request) {
       )
     }
 
-    const toEmail = process.env.DEMO_REQUEST_TO_EMAIL || 'vibhu.athavaria@gmail.com'
+    const toEmail = process.env.DEMO_REQUEST_TO_EMAIL
 
     // Format the email content
     const emailHtml = `
@@ -83,7 +83,7 @@ export async function POST(request: Request) {
     `
 
     const data = await resend.emails.send({
-      from: 'Kaihle Demo Request <onboarding@resend.dev>',
+      from: 'Kaihle Demo Request <onboarding@kaihle.com>',
       to: [toEmail],
       subject: `New Demo Request from ${name} - ${school}`,
       html: emailHtml,
