@@ -89,7 +89,7 @@ export async function POST(request: Request) {
     `
 
     const data = await resend.emails.send({
-      from: 'Kaihle Demo Request <onboarding@resend.dev>',
+      from: 'Kaihle Demo Request <onboarding@kaihle.com>',
       to: [toEmail],
       subject: `New Demo Request from ${name} - ${school}`,
       html: emailHtml,
