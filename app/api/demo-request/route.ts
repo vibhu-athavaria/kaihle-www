@@ -17,7 +17,7 @@ export async function POST(request: Request) {
       )
     }
 
-    const toEmail = process.env.DEMO_REQUEST_TO_EMAIL
+    const toEmail = process.env.DEMO_REQUEST_TO_EMAIL || 'vibhu.athavaria@gmail.com'
 
     if (!toEmail) {
         return NextResponse.json(
