@@ -20,12 +20,27 @@ export default function DemoPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    
-    setLoading(false)
-    setSubmitted(true)
+
+    try {
+      const response = await fetch('/api/demo-request', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to submit form')
+      }
+
+      setSubmitted(true)
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      alert('Failed to submit form. Please try again.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -40,7 +55,7 @@ export default function DemoPage() {
       <>
         <section className="relative bg-gradient-to-br from-primary to-primary-dark overflow-hidden py-20 min-h-[60vh] flex items-center">
           <div className="absolute inset-0" style={{ background: 'radial-gradient(circle at 80% 50%, rgba(201,147,42,0.15) 0%, transparent 60%)' }} />
-          
+
           <div className="max-w-[600px] mx-auto px-6 text-center relative z-10">
             <div className="text-[64px] mb-6">🎉</div>
             <h1 className="font-fraunces text-[36px] md:text-[48px] font-bold text-white tracking-[-1.5px] leading-[1.1] mb-6">
@@ -61,7 +76,7 @@ export default function DemoPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary to-primary-dark overflow-hidden py-20">
         <div className="absolute inset-0" style={{ background: 'radial-gradient(circle at 80% 50%, rgba(201,147,42,0.15) 0%, transparent 60%)' }} />
-        
+
         <div className="max-w-[600px] mx-auto px-6 text-center relative z-10">
           <h1 className="font-fraunces text-[42px] md:text-[52px] font-bold text-white tracking-[-1.5px] leading-[1.1] mb-6">
             Request a Demo
@@ -204,10 +219,10 @@ export default function DemoPage() {
               />
             </div>
 
-            <Button 
-              type="submit" 
-              variant="primary" 
-              size="lg" 
+            <Button
+              type="submit"
+              variant="primary"
+              size="lg"
               className="w-full"
               disabled={loading}
             >
