@@ -19,6 +19,12 @@ export async function POST(request: Request) {
 
     const toEmail = process.env.DEMO_REQUEST_TO_EMAIL
 
+    if (!toEmail) {
+        return NextResponse.json(
+        { error: 'Missing recipient email configuration' },
+        { status: 500 }
+      )
+    }
     // Format the email content
     const emailHtml = `
       <!DOCTYPE html>
@@ -83,7 +89,7 @@ export async function POST(request: Request) {
     `
 
     const data = await resend.emails.send({
-      from: 'Kaihle Demo Request <onboarding@kaihle.com>',
+      from: 'Kaihle Demo Request <onboarding@resend.dev>',
       to: [toEmail],
       subject: `New Demo Request from ${name} - ${school}`,
       html: emailHtml,
