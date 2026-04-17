@@ -22,7 +22,7 @@ const steps = [
     title: "Before anything else: tell Kaihle about yourself",
     body: `When a student joins Kaihle for the first time, the very first thing they do isn't a test — it's a short onboarding conversation. Kaihle asks the student a few simple questions about how they like to learn: Do they prefer to see examples before explanations, or the other way around? Do they find it easier to work through problems step by step, or see the big picture first? How do they feel about the subject they're about to study?
 
-This isn't a quiz. There are no right or wrong answers. It's Kaihle getting to know the person behind the student — so that from the very first lesson, every piece of content, every study plan, and every AI-generated explanation is built around how this student actually learns. Not how the average student learns. Them.`,
+This isn't a quiz. There are no right or wrong answers. It's Kaihle getting to know the person behind the student — so that from the very first lesson, every piece of content, every study plan, and every AI-generated explanation is built around how this student actually learns. Not how the average student learns.`,
     badge: '🙋 Takes ~5 minutes · No right answers · Sets up everything that follows',
     isOnboarding: true,
   },
@@ -57,7 +57,7 @@ Resources are selected by semantic similarity to the curriculum subtopic — not
     num: '05',
     Icon: Sparkles,
     title: 'AI-generated explainer content',
-    body: `For deeper gaps, Kaihle generates personalised explainer content — structured around how this specific student learns. Teachers can see every student&apos;s content and progress inside the class dashboard.`,
+    body: `For deeper gaps, Kaihle generates personalised explainer content — structured around how this specific student learns. Teachers can see every student's content and progress inside the class dashboard.`,
     badge: 'Animations · Infographics · Practice questions',
   },
   {

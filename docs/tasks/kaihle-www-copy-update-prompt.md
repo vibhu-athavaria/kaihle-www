@@ -313,7 +313,7 @@ Block 3:
 
 > `Most platforms use "personalised learning" to mean the student picks their own pace through the same content everyone else sees.`
 
-> `Kaihle personalises differently. It starts by learning how each student thinks — before a single lesson begins. Then every study plan, every AI-generated explanation, and every practice activity is built around that specific student's learning preferences. Not the class average. Not the curriculum default. Them.`
+> `Kaihle personalises differently. It starts by learning how each student thinks — before a single lesson begins. Then every study plan, every AI-generated explanation, and every practice activity is built around that specific student's learning preferences. Not the class average. Not the curriculum default.`
 
 ---
 
