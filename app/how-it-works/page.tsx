@@ -64,7 +64,7 @@ Resources are selected by semantic similarity to the curriculum subtopic — not
     num: '06',
     Icon: Mail,
     title: 'Parents stay informed',
-    body: `Each week, parents receive a plain-language summary of their child&apos;s progress — improvements, gaps still being addressed, and what's coming next. No jargon. No login required.`,
+    body: `Each week, parents receive a plain-language summary of their child's progress — improvements, gaps still being addressed, and what's coming next. No jargon. No login required.`,
     badge: 'Weekly · Plain language · No parent login needed',
   },
 ]
