@@ -66,7 +66,7 @@ export default function HomePage() {
                 <div className="w-[34px] h-[34px] rounded-full border-[2.5px] border-soft bg-orange-400 -ml-[10px]" />
                 <div className="w-[34px] h-[34px] rounded-full border-[2.5px] border-soft bg-blue-400 -ml-[10px]" />
               </div>
-              <p className="text-[13px] text-gray-600">
+              <p className="text-[14px] text-gray-600">
                 <strong>Pilot applications open</strong> for partner schools
               </p>
             </div>
@@ -98,7 +98,7 @@ export default function HomePage() {
             <div className="font-fraunces text-[28px] font-bold text-ink tracking-[-1px] leading-none">
               AI-<br /><span className="text-primary">generated</span>
             </div>
-            <div className="text-[13px] text-gray-500 font-medium mt-1">Personalised study plans built around each student&apos;s gaps</div>
+             <div className="text-[13px] text-gray-500 font-medium mt-1">Personalised study plans built around each student{"'"}s gaps</div>
           </div>
         </div>
       </div>
@@ -159,20 +159,20 @@ export default function HomePage() {
             <div className="bg-white p-10">
               <div className="w-[52px] h-[52px] bg-primary rounded-[14px] font-black text-[20px] text-white flex items-center justify-center mb-4">01</div>
               <h3 className="text-[19px] font-extrabold text-ink mb-2.5">Diagnose</h3>
-              <p className="text-[14px] leading-[1.7] text-gray-600 mb-3.5">Students take a structured diagnostic assessment. Kaihle maps their exact knowledge gaps across every subtopic in the curriculum.</p>
-              <span className="bg-primary-light text-primary text-[11px] font-bold px-3 py-1 rounded-full inline-block">Takes ~15 minutes</span>
+              <p className="text-[15px] leading-[1.7] text-gray-600 mb-3.5">Students take a structured diagnostic assessment. Kaihle maps their exact knowledge gaps across every subtopic in the curriculum.</p>
+              <span className="bg-primary-light text-primary text-[12px] font-bold px-3 py-1 rounded-full inline-block">Takes about 30 to 45 minutes</span>
             </div>
             <div className="bg-white p-10">
               <div className="w-[52px] h-[52px] bg-primary rounded-[14px] font-black text-[20px] text-white flex items-center justify-center mb-4">02</div>
               <h3 className="text-[19px] font-extrabold text-ink mb-2.5">Identify</h3>
-              <p className="text-[14px] leading-[1.7] text-gray-600 mb-3.5">Teachers see a real-time heatmap of their class. Instantly know who is struggling, on what topic, and by how much.</p>
-              <span className="bg-primary-light text-primary text-[11px] font-bold px-3 py-1 rounded-full inline-block">Updated in real-time</span>
+              <p className="text-[15px] leading-[1.7] text-gray-600 mb-3.5">Teachers see a real-time heatmap of their class. Instantly know who is struggling, on what topic, and by how much.</p>
+              <span className="bg-primary-light text-primary text-[12px] font-bold px-3 py-1 rounded-full inline-block">Updated in real-time</span>
             </div>
             <div className="bg-white p-10">
               <div className="w-[52px] h-[52px] bg-primary rounded-[14px] font-black text-[20px] text-white flex items-center justify-center mb-4">03</div>
               <h3 className="text-[19px] font-extrabold text-ink mb-2.5">Fix</h3>
-              <p className="text-[14px] leading-[1.7] text-gray-600 mb-3.5">Students get a personalised study plan built for how they learn. Teachers coach. Kaihle handles the rest.</p>
-              <span className="bg-primary-light text-primary text-[11px] font-bold px-3 py-1 rounded-full inline-block">Fully automated</span>
+              <p className="text-[15px] leading-[1.7] text-gray-600 mb-3.5">Students get a personalised study plan built for how they learn. Teachers coach. Kaihle handles the rest.</p>
+              <span className="bg-primary-light text-primary text-[12px] font-bold px-3 py-1 rounded-full inline-block">Fully automated</span>
             </div>
           </div>
           

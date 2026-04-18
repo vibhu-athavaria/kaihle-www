@@ -229,7 +229,7 @@ export default function DemoPage() {
               {loading ? 'Submitting...' : 'Submit Request'}
             </Button>
 
-            <p className="text-[13px] text-gray-500 text-center">
+            <p className="text-[14px] text-gray-500 text-center">
               By submitting, you agree to our privacy policy. We&apos;ll be in touch within 24 hours.
             </p>
           </form>
