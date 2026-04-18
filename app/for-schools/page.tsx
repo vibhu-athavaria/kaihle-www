@@ -55,7 +55,7 @@ export default function ForSchoolsPage() {
           <div className="bg-white p-10">
             <div className="text-[28px] mb-4">⚠️</div>
             <h3 className="font-fraunces text-[22px] font-bold text-ink mb-3.5">The problem every school shares</h3>
-            <p className="text-[15px] leading-[1.75] text-gray-600">
+            <p className="text-[16px] leading-[1.75] text-gray-600">
               Teachers are stretched. Class sizes make individual attention hard.
               End-of-term results tell you what happened — not what to do about it.
               <br /><br />
@@ -66,7 +66,7 @@ export default function ForSchoolsPage() {
           <div className="bg-primary-light p-10">
             <div className="text-[28px] mb-4">✅</div>
             <h3 className="font-fraunces text-[22px] font-bold text-primary mb-3.5">What Kaihle does differently</h3>
-            <p className="text-[15px] leading-[1.75] text-gray-600">
+            <p className="text-[16px] leading-[1.75] text-gray-600">
               Kaihle runs structured diagnostic assessments at the start of every unit.
               The platform analyses every response, maps gaps to specific curriculum
               subtopics, and generates a personalised study plan for each student —
@@ -92,7 +92,7 @@ export default function ForSchoolsPage() {
             <div className="bg-white rounded-[18px] p-7 border border-gray-200">
               <div className="text-[28px] mb-3">🏫</div>
               <h3 className="text-[15px] font-extrabold text-ink mb-2">School Administrators</h3>
-              <p className="text-[13px] leading-[1.65] text-gray-600">
+              <p className="text-[14px] leading-[1.65] text-gray-600">
                 Full visibility across every class and every teacher.
                 Understand school-wide performance trends. Approve student enrolments
                 and manage staff in one place.
@@ -101,7 +101,7 @@ export default function ForSchoolsPage() {
             <div className="bg-white rounded-[18px] p-7 border border-gray-200">
               <div className="text-[28px] mb-3">📖</div>
               <h3 className="text-[15px] font-extrabold text-ink mb-2">Teachers</h3>
-              <p className="text-[13px] leading-[1.65] text-gray-600">
+              <p className="text-[14px] leading-[1.65] text-gray-600">
                 See exactly where your class is struggling — before you
                 teach the wrong thing twice. Assign assessments, review results, and
                 let Kaihle generate the follow-up content.
@@ -110,7 +110,7 @@ export default function ForSchoolsPage() {
             <div className="bg-white rounded-[18px] p-7 border border-gray-200">
               <div className="text-[28px] mb-3">🎓</div>
               <h3 className="text-[15px] font-extrabold text-ink mb-2">Students</h3>
-              <p className="text-[13px] leading-[1.65] text-gray-600">
+              <p className="text-[14px] leading-[1.65] text-gray-600">
                 Take a short diagnostic. Get a personalised plan. Learn
                 through AI-generated explanations matched to your exact gaps and your
                 learning style.
@@ -119,7 +119,7 @@ export default function ForSchoolsPage() {
             <div className="bg-white rounded-[18px] p-7 border border-gray-200">
               <div className="text-[28px] mb-3">👨‍👩‍👧</div>
               <h3 className="text-[15px] font-extrabold text-ink mb-2">Parents</h3>
-              <p className="text-[13px] leading-[1.65] text-gray-600">
+              <p className="text-[14px] leading-[1.65] text-gray-600">
                 Receive a plain-language weekly summary of your child&apos;s
                 progress — what improved, what&apos;s still being addressed, and what&apos;s
                 coming next. No jargon. No login required.
@@ -142,7 +142,7 @@ export default function ForSchoolsPage() {
               <h2 className="font-fraunces text-[32px] md:text-[36px] font-bold text-white tracking-[-1px] mb-4">
                 Apply for the Pilot Programme
               </h2>
-              <p className="text-[15px] text-white/75 leading-[1.7] mb-7">
+              <p className="text-[16px] text-white/75 leading-[1.7] mb-7">
                 We are currently accepting applications from micro schools and small
                 international schools worldwide for our founding pilot programme.
               </p>
@@ -186,21 +186,21 @@ export default function ForSchoolsPage() {
             <div className="text-center relative">
               <div className="w-10 h-10 bg-primary text-white rounded-full font-bold text-[14px] flex items-center justify-center mx-auto mb-4 relative z-10">1</div>
               <h3 className="text-[14px] font-extrabold text-ink mb-1.5">Diagnostic In</h3>
-              <p className="text-[13px] text-gray-600 leading-[1.6]">
+              <p className="text-[14px] text-gray-600 leading-[1.6]">
                 Student joins a class → Kaihle creates their diagnostic assessment automatically.
               </p>
             </div>
             <div className="text-center relative">
               <div className="w-10 h-10 bg-primary text-white rounded-full font-bold text-[14px] flex items-center justify-center mx-auto mb-4 relative z-10">2</div>
               <h3 className="text-[14px] font-extrabold text-ink mb-1.5">Gaps Mapped</h3>
-              <p className="text-[13px] text-gray-600 leading-[1.6]">
+              <p className="text-[14px] text-gray-600 leading-[1.6]">
                 Every response is scored and mapped to a specific curriculum subtopic. Teacher sees results immediately.
               </p>
             </div>
             <div className="text-center relative">
               <div className="w-10 h-10 bg-primary text-white rounded-full font-bold text-[14px] flex items-center justify-center mx-auto mb-4 relative z-10">3</div>
               <h3 className="text-[14px] font-extrabold text-ink mb-1.5">Plans Generated</h3>
-              <p className="text-[13px] text-gray-600 leading-[1.6]">
+              <p className="text-[14px] text-gray-600 leading-[1.6]">
                 Personalised study plan created per student — resources, quizzes, and AI content.
               </p>
             </div>
