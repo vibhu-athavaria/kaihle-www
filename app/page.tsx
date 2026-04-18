@@ -98,7 +98,7 @@ export default function HomePage() {
             <div className="font-fraunces text-[28px] font-bold text-ink tracking-[-1px] leading-none">
               AI-<br /><span className="text-primary">generated</span>
             </div>
-             <div className="text-[13px] text-gray-500 font-medium mt-1">Personalised study plans built around each student{'\'}s gaps</div>
+             <div className="text-[13px] text-gray-500 font-medium mt-1">Personalised study plans built around each student{"'"}s gaps</div>
           </div>
         </div>
       </div>

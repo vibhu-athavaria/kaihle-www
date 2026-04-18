@@ -192,7 +192,7 @@ export default function WhyKaihlePage() {
               Most platforms use &quot;personalised learning&quot; to mean the student picks their own pace through the same content everyone else sees.
             </p>
             <p>
-              Kaihle personalises differently. It starts by learning how each student thinks — before a single lesson begins. Then every study plan, every AI-generated explanation, and every practice activity is built around that specific student{'\'}s learning preferences. Not the class average. Not the curriculum default.
+              Kaihle personalises differently. It starts by learning how each student thinks — before a single lesson begins. Then every study plan, every AI-generated explanation, and every practice activity is built around that specific student{"'"}s learning preferences. Not the class average. Not the curriculum default.
             </p>
           </div>
         </div>
