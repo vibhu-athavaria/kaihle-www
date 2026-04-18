@@ -20,7 +20,7 @@ export default function WhyKaihlePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-soft border-b border-primary-mid py-20 overflow-hidden">
+      <section className="relative bg-soft border-b border-primary-mid py-14 overflow-hidden">
         <div className="max-w-[1200px] mx-auto px-6 md:px-14 text-center max-w-[900px]">
           <h1 className="font-fraunces text-[42px] md:text-[52px] font-bold text-ink tracking-[-1.5px] leading-[1.1] mb-6">
             Why schools keep failing the same students — and why that&apos;s not the teachers&apos; fault

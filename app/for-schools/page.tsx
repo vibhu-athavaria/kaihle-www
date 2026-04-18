@@ -25,7 +25,7 @@ export default function ForSchoolsPage() {
       <section className="relative bg-gradient-to-br from-primary to-primary-dark overflow-hidden">
         <div className="absolute inset-0" style={{ background: 'radial-gradient(circle at 80% 50%, rgba(201,147,42,0.15) 0%, transparent 60%)' }} />
         
-        <div className="max-w-[1200px] mx-auto px-6 md:px-14 py-20 relative z-10">
+        <div className="max-w-[1200px] mx-auto px-6 md:px-14 py-14 relative z-10">
           <div className="max-w-[640px]">
             <div className="inline-flex items-center gap-2 bg-white/12 border border-white/30 text-white px-4 py-2 rounded-full text-[12px] font-bold uppercase tracking-[1px] mb-6">
               Cambridge & IB Schools
@@ -79,7 +79,7 @@ export default function ForSchoolsPage() {
       </SectionWrapper>
 
       {/* Built for every role */}
-      <section className="bg-white border-y border-gray-200 py-20">
+      <section className="bg-white border-y border-gray-200 py-14">
         <div className="max-w-[1200px] mx-auto px-6 md:px-14">
           <div className="text-center mb-12">
             <SectionTag>Built for every role</SectionTag>
@@ -171,7 +171,7 @@ export default function ForSchoolsPage() {
       </SectionWrapper>
 
       {/* Mini Steps */}
-      <section className="bg-white border-y border-gray-200 py-20">
+      <section className="bg-white border-y border-gray-200 py-14">
         <div className="max-w-[1200px] mx-auto px-6 md:px-14">
           <div className="text-center mb-12">
             <SectionTag>The platform, in plain terms</SectionTag>
