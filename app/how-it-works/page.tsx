@@ -73,7 +73,7 @@ export default function HowItWorksPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-white border-t-4 border-primary py-20">
+      <section className="bg-white border-t-4 border-primary py-14">
         <div className="max-w-[1200px] mx-auto px-6 md:px-14 text-center max-w-[800px]">
           <h1 className="font-fraunces text-[42px] md:text-[52px] font-bold text-ink tracking-[-1.5px] leading-[1.1] mb-6">
             From diagnostic to personalised learning — in one platform.

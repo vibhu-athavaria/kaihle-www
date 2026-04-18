@@ -53,7 +53,7 @@ export default function DemoPage() {
   if (submitted) {
     return (
       <>
-        <section className="relative bg-gradient-to-br from-primary to-primary-dark overflow-hidden py-20 min-h-[60vh] flex items-center">
+        <section className="relative bg-gradient-to-br from-primary to-primary-dark overflow-hidden py-14 min-h-[60vh] flex items-center">
           <div className="absolute inset-0" style={{ background: 'radial-gradient(circle at 80% 50%, rgba(201,147,42,0.15) 0%, transparent 60%)' }} />
 
           <div className="max-w-[600px] mx-auto px-6 text-center relative z-10">
@@ -74,7 +74,7 @@ export default function DemoPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary to-primary-dark overflow-hidden py-20">
+      <section className="relative bg-gradient-to-br from-primary to-primary-dark overflow-hidden py-14">
         <div className="absolute inset-0" style={{ background: 'radial-gradient(circle at 80% 50%, rgba(201,147,42,0.15) 0%, transparent 60%)' }} />
 
         <div className="max-w-[600px] mx-auto px-6 text-center relative z-10">

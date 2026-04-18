@@ -146,7 +146,7 @@ export default function HomePage() {
       </SectionWrapper>
 
       {/* How It Works */}
-      <section className="bg-white border-y border-gray-200 py-20">
+      <section className="bg-white border-y border-gray-200 py-14">
         <div className="max-w-[1200px] mx-auto px-6 md:px-14">
           <div className="text-center mb-12">
             <SectionTag>How it works</SectionTag>

@@ -18,7 +18,7 @@ export default function PricingPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-soft border-b border-primary-mid py-20">
+      <section className="bg-soft border-b border-primary-mid py-14">
         <div className="max-w-[1200px] mx-auto px-6 md:px-14 text-center max-w-[800px]">
           <SectionTag>Pricing</SectionTag>
           <h1 className="font-fraunces text-[42px] md:text-[52px] font-bold text-ink tracking-[-1.5px] leading-[1.1] mb-6">
